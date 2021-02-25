@@ -21,6 +21,9 @@ setup(
     url='https://github.com/Yelp/detect-secrets',
     download_url='https://github.com/Yelp/detect-secrets/archive/{}.tar.gz'.format(VERSION),
     keywords=['secret-management', 'pre-commit', 'security', 'entropy-checks'],
+    setup_requires=[
+        'requests',
+    ],
     install_requires=[
         'pyyaml',
         'requests',
